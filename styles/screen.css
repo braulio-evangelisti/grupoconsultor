@@ -8853,8 +8853,8 @@ div:not(.col-md-12) > .tabs-nav a:after {
     .tab-item {
       padding: 2em; } }
   .tab-item > div {
-    /* border-radius: 100%; */
-    outline: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
     -webkit-transform: rotate(45deg) scale(0.3);
        -moz-transform: rotate(45deg) scale(0.3);
         -ms-transform: rotate(45deg) scale(0.3);
