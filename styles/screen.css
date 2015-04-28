@@ -501,6 +501,7 @@ html .row-fit {
 .col-md-05 {
   position: relative;
   min-height: 1px;
+  margin-top: 10px;
   padding-left: 15px;
   padding-right: 15px;
   float: left;
