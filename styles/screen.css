@@ -9544,3 +9544,38 @@ body:not(.dom-loaded) .page-loader {
 .strp-window-skin-strip.strp-side-bottom.strp-closing .strp-page {
   bottom: auto;
   top: 0; }
+
+label.myLabel input[type="file"] {
+    position: fixed;
+    top: -1000px;
+}  
+
+/***** Example custom styling *****/
+.myLabel {
+    background-color: #D04840;
+    padding:  16px 20px;
+    margin: 0px;
+    display: inline-block;
+}
+.myLabel:hover {
+    background: #D04840;
+    cursor: pointer;
+}
+.myLabel:active {
+    background: #D04840;
+}
+.myLabel :invalid + span {
+    color: #fff;
+}
+.myLabel :valid + span {
+    color: #fff;
+}
+
+#news,
+#about {
+  border-bottom: 1px solid #c0c0c0;
+}
+
+#news img {
+  max-width: 100%;
+}
