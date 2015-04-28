@@ -705,7 +705,8 @@ ul, ol {
     position: absolute;
     top: 37.8612px;
     left: 42.068px;
-    text-align: center; }
+    text-align: center;
+    border-radius: 100%; }
     .fancy-blockquote > span:after, .fancy-blockquote > span:before {
       content: "";
       display: block;
@@ -730,7 +731,8 @@ ul, ol {
       display: block;
       height: 27.551px;
       z-index: 2;
-      position: relative; }
+      position: relative;
+      border-radius: 100%; }
       .fancy-blockquote > span > i:before {
         line-height: 1em;
         display: block;
@@ -8477,12 +8479,13 @@ span[data-year] {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -21.034px;
+    bottom: -36.034px;
     pointer-events: none; }
     .post-thumb figcaption > span {
       display: block;
-      width: 42.068px;
-      height: 42.068px;
+      width: 72.068px;
+      height: 72.068px;
+      border-radius: 100%;
       -webkit-transform: rotate(45deg);
          -moz-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
@@ -8490,7 +8493,7 @@ span[data-year] {
               transform: rotate(45deg);
       margin: 0 auto;
       color: #ffffff;
-      outline: 8px solid; }
+      border: 8px solid; }
       .post-thumb figcaption > span > i {
         -webkit-transform: rotate(-45deg);
            -moz-transform: rotate(-45deg);
