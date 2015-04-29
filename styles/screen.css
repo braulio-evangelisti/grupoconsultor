@@ -7244,9 +7244,10 @@ img.size-full, img.size-large {
       font-size: 16.8272px;
       display: table;
       border: 1px solid rgba(255, 255, 255, 0.5);
-      width: 31.551px;
-      height: 31.551px;
+      width: 39.551px;
+      height: 39.551px;
       position: relative;
+      border-radius: 100%;
       -webkit-transform: rotate(45deg);
          -moz-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
@@ -8577,7 +8578,7 @@ span[data-year] {
     position: absolute;
     top: 50%;
     left: 50%;
-    right: 0;
+    /* right: 0; */
     -webkit-transform: translate(-50%, -50%);
        -moz-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
