@@ -8934,6 +8934,23 @@ div:not(.col-md-12) > .tabs-nav a:after {
        -o-transition: all 0.3s ease;
           transition: all 0.3s ease; }
 
+.big-tabs-content h4 {
+  color: white;
+  padding: 20px 0px;
+  text-align: center;
+  background: #D04840;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+.big-tabs-content .col-md-5 {
+  background: #fff;
+  padding: 0px 0px 20px 0px;
+}
+.big-tabs-content p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 20px 20px 0px 20px;
+  color: rgb(83, 83, 83); }
+
 .vector-map {
   text-transform: uppercase; }
 
