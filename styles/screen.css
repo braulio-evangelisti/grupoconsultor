@@ -305,8 +305,8 @@ html .text-center {
    }
 
 .uppercase-header {
-  text-transform: uppercase;
   background-color: #756F6B; 
+  font-size: 16px;
    }   
 
 html .font-2x {
@@ -8937,19 +8937,15 @@ div:not(.col-md-12) > .tabs-nav a:after {
 .big-tabs-content h4 {
   color: white;
   padding: 20px 0px;
-  text-align: center;
-  background: #D04840;
   margin-top: 0px;
   margin-bottom: 0px; }
 .big-tabs-content .col-md-5 {
-  background: #fff;
   padding: 0px 0px 20px 0px;
 }
 .big-tabs-content p {
   margin-top: 0px;
   margin-bottom: 0px;
-  padding: 20px 20px 0px 20px;
-  color: rgb(83, 83, 83); }
+  color: rgb(255, 255, 255); }
 
 .vector-map {
   text-transform: uppercase; }
