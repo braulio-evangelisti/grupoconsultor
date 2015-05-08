@@ -9590,6 +9590,7 @@ label.myLabel input[type="file"] {
 }
 
 #news,
+#busquedas,
 #about {
   border-bottom: 1px solid #c0c0c0;
 }
