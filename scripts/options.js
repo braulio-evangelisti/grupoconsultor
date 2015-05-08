@@ -5,7 +5,7 @@ require.config({
 	baseUrl: 'scripts/components',
 	paths: {
 		jquery:     'jquery',
-		domready:   'domReady',
+		domready:   'domready',
 		modernizr:   'modernizr',
 	},
 	shim: {
