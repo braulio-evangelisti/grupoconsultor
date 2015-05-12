@@ -24,13 +24,13 @@
         <meta name="description" content="<?php echo $metaDesc; ?>">
         <meta name="author" content="<?php echo $metaAuth; ?>">
         
-        <meta name="description" content="<?php echo stripslashes($row['descripcion']); ?>" />
+        <meta name="description" content="<?php echo $row['copete']; ?>" />
 		<meta name="twitter:card" value="summary">
 		<meta property="og:title" content="<?php echo $row['titulo']; ?>" />
 		<meta property="og:type" content="article" />
 		<meta property="og:url" content="http://www.grupoconsultorrrhh.com.ar/novedad.php?idNovedad=<?php echo $id; ?>" />
 		<meta property="og:image" content="<?php echo _global_siteurl; ?>adm-gestor/frm_novedades/img/<?php echo $row['imagen']; ?>" />
-		<meta property="og:description" content="<?php echo stripslashes($row['descripcion']); ?>" />
+		<meta property="og:description" content="<?php echo $row['copete']; ?>" />
 
         <!-- Favicon -->
 		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
