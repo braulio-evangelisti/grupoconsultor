@@ -29,7 +29,7 @@
 		<meta property="og:title" content="<?php echo $row['titulo']; ?>" />
 		<meta property="og:type" content="article" />
 		<meta property="og:url" content="http://www.grupoconsultorrrhh.com.ar/busqueda.php?idBusqueda=<?php echo $id; ?>" />
-		<meta property="og:image" content="<?php echo _global_siteurl; ?>adm-gestor/frm_novedades/img/<?php echo $row['imagen']; ?>" />
+		<meta property="og:image" content="images/novedad.jpg" />
 		<meta property="og:description" content="<?php echo $row['copete']; ?>" />
 
         <!-- Favicon -->
