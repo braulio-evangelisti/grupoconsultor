@@ -627,7 +627,7 @@
 	 							<li>Comunicación organizacional</li>
 	 							<li>Encuesta de Clima organizacional</li>
 	 						</ul>
-	 						<div class="space-3x"></div>
+	 						<div class="space-1x"></div>
 	 					</div>
 	 				</div>
 	 			</div> 
