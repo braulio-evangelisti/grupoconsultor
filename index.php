@@ -16,7 +16,16 @@
         <meta name="keyword" content="<?php echo $metaKeywords; ?>">
         <meta name="description" content="<?php echo $metaDesc; ?>">
         <meta name="author" content="<?php echo $metaAuth; ?>">
-        <link rel="shortcut icon" href="images/cuz.png">
+
+		<meta name="description" content="<?php echo $metaDesc; ?>" />
+		<meta name="twitter:card" value="summary">
+		<meta property="og:title" content="<?php echo $publicTitle; ?>" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://www.grupoconsultorrrhh.com.ar/" />
+		<meta property="og:image" content="http://grupoconsultorrrhh.com.ar/adm-gestor/frm_slider/1431372955_handshake-business-family-southeast-asia.jpg" />
+		<meta property="og:description" content="<?php echo $metaDesc; ?>" />
+
+        <link rel="shortcut icon" href="favicon.ico">
 		
 		<!-- Fuente+CSS -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Varela' rel='stylesheet' type='text/css'>

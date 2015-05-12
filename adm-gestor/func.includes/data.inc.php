@@ -32,7 +32,7 @@
 	$publicTitle 	= "Grupo Consultor RRHH";
 	$admTitle 		= "Panel Administrativo";
 	$metaAuth		= "Grupo Consultor RRHH";
-	$metaDesc		= "Descripcion";
+	$metaDesc		= "Nos espacializamos en consultoria externa integral de recursos humanos, brindando asesoramiento en selección de personal, evaluaciones psicotecnicas, evaluaciones de desempeño por competencias, capacitacion y desarrollo organizacional.";
 	$metaKeywords	= "Grupo, Consultor, Rosario, rrhh";
 
 ?>

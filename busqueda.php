@@ -23,7 +23,16 @@
         <meta name="keyword" content="<?php echo $metaKeywords; ?>">
         <meta name="description" content="<?php echo $metaDesc; ?>">
         <meta name="author" content="<?php echo $metaAuth; ?>">
-        <link rel="shortcut icon" href="images/cuz.png">
+        
+        <meta name="description" content="<?php echo stripslashes($row['descripcion']); ?>" />
+		<meta name="twitter:card" value="summary">
+		<meta property="og:title" content="<?php echo $row['titulo']; ?>" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="http://www.grupoconsultorrrhh.com.ar/busqueda.php?idBusqueda=<?php echo $id; ?>" />
+		<meta property="og:image" content="<?php echo _global_siteurl; ?>adm-gestor/frm_novedades/img/<?php echo $row['imagen']; ?>" />
+		<meta property="og:description" content="<?php echo stripslashes($row['descripcion']); ?>" />
+
+        <link rel="shortcut icon" href="favicon.ico">
 
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Varela' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="styles/screen.css">
