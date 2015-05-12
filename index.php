@@ -620,9 +620,13 @@
 	 				<div class="col-md-12">
 	 					<div class="text-white">
 	 						<h6 class="uppercase">Casos de exito</h6>
-	 						<h4 class="font-alpha no-margin">Reingeniería de proceso organizacional.</h4>
+	 						<h4 class="font-alpha no-margin">Intervenciones en Consultoría de Desarrollo Organizacional</h4>
 	 						<hr class="hr-10 bg-white">
 	 						<p>Cliente:  <b>Dunod propiedades</b></p>
+	 						<ul>
+	 							<li>Comunicación organizacional</li>
+	 							<li>Encuesta de Clima organizacional</li>
+	 						</ul>
 	 						<div class="space-3x"></div>
 	 					</div>
 	 				</div>
