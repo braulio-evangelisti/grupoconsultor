@@ -53,7 +53,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="intro-logo">
+                            <div class="intro-logo hidden-xs">
                                 <a href="index.php"><img src="images/load.svg" data-src="images/logo-intro.png" alt="Grupo Consultor RRHH"></a>
                             </div>
                         </div>
