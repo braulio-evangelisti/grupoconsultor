@@ -24,6 +24,7 @@
 		
 		<!-- JS -->
         <script src="scripts/components/require.js" data-main="scripts/options"></script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
     </head>
 <body data-preloader="on">
     <!--[if lt IE 9]>
@@ -609,7 +610,13 @@
 	 				</div>
 	 			</div> 
 	 		</div> 
-	 	</section> 
+	 	</section>
+
+	 	<?php 
+		 	$result = $_GET['r'];
+			if($result == 'ok'){ $msg = '<div class="notification_ok">Tu mensaje ha sido enviado. Muchas gracias!</div>'; }
+			if($result == 'bad'){ $msg = '<div class="notification_ok">Ocurrió un problema enviando el mensaje. Intenta mas tarde.</div>'; }
+	 	?>
 
 		<section id="contact" class="box">
 			<div class="container">
@@ -627,7 +634,7 @@
 						<div class="space-2x"></div>
 						<h6 class="font-alpha uppercase text-center"><b>Envianos tu consulta</b></h6>
 						<hr class="hr-10 align-center">
-						<form action="#" class="slim-form full-inputs row">
+						<form action="enviar.php" method="POST" class="slim-form full-inputs row">
 							<p class="col-md-4">
 								<input type="text" name="nombre" required >
 								<span class="uppercase font-beta text-beta">Nombre</span>
@@ -644,12 +651,22 @@
 								<textarea name="mensaje" required ></textarea>
 								<span class="uppercase font-beta text-beta">Mensaje</span>
 							</p>
+							<div class="g-recaptcha col-md-4" data-sitekey="6LfcqgYTAAAAANoEOwwFmS-zKkxEpVcgzjPuOU4v"></div>
+							<p class="col-md-8">
+								<button type="submit" class="button-lg button-outline make-full uppercase">Enviar mensaje</button>
+							</p>
 							<p class="col-md-12">
-								<button class="button-lg button-outline make-full uppercase">Enviar mensaje</button>
+								<?php echo $msg;  ?>
 							</p>
 						</form>
 					</div>
 				</div> 
+
+				<?php 
+				 	$resultcv = $_GET['rcv'];
+					if($resultcv == 'ok'){ $msgcv = '<div class="notification_ok">Tu mensaje ha sido enviado. Muchas gracias!</div>'; }
+					if($resultcv == 'bad'){ $msgcv = '<div class="notification_ok">Ocurrió un problema enviando el mensaje. Intenta mas tarde.</div>'; }
+			 	?>
 
 				<section id="cv" class="box box-title">
 					<div class="container">
@@ -660,15 +677,18 @@
 									<h6 class="text-grey text-air">Dejános tu curriculum</h6>
 									<br/>
 
-									<form action="#" class="slim-form full-inputs row">
+									<form action="enviarcv.php" method="POST" enctype="multipart/form-data" class="slim-form full-inputs row">
 										<p class="col-xs-12 col-md-3">
 										  	<label class="myLabel">
-											    <input type="file" value="" required/>
+											    <input type="file" name="cv" value="" required/>
 											    <span>Seleccionar archivo</span>
 											</label>
 										</p>
 										<p class="col-xs-12 col-md-8">
-											<button class="button-lg button-outline make-full uppercase">Enviar CV</button>
+											<button type="submit" class="button-lg button-outline make-full uppercase">Enviar CV</button>
+										</p>
+										<p class="col-md-12">
+											<?php echo $msgcv; ?>
 										</p>
 									</form>
 
