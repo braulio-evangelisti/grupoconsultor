@@ -370,7 +370,7 @@ require(['jquery', 'modernizr'], function() {
 		}
 
 		// Vector map
-		var vectorMap = jQuery('.vector-map');
+		/*var vectorMap = jQuery('.vector-map');
 		if(vectorMap.length) {
 			require(['raphael', 'mapael', 'map-world'], function() {
 				vectorMap.mapael({
@@ -433,7 +433,7 @@ require(['jquery', 'modernizr'], function() {
 					}
 				});
 			});
-		}
+		}*/
 
 		// Blog sharing
 		var blogSharing = jQuery('.blog-sharing');

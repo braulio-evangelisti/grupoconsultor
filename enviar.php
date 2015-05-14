@@ -34,8 +34,8 @@ if(isset($_POST['g-recaptcha-response']))
 		$mail->From = $_POST['email']; 
 		$mail->FromName = $_POST['nombre']; 
 		$mail->Subject = "Nuevo contacto desde grupoconsultorrrhh.com.ar "; 
-		$mail->AddAddress("grupoconsulltor@fibertel.com.ar","Grupo Consultor RRHH");
-		$mail->AddBCC("grafitodd@gmail.com","Grafito Diseño Digital");
+		/*$mail->AddAddress("grupoconsultor@fibertel.com.ar","Grupo Consultor RRHH");*/
+		$mail->AddBCC("grafitodd@gmail.com");
 		$mail->CharSet = "UTF-8";
 		$mail->IsHTML(true); 
 		 
@@ -47,11 +47,11 @@ if(isset($_POST['g-recaptcha-response']))
 		 	
 	 	if($mail)
 		{ 
-			header ('Location: index.php?r=ok#contact'); 
+			header ('Location: /?r=ok#contact'); 
 		}
 		else
 		{
-			header ('Location: index.php?r=bad#contact'); 
+			header ('Location: /?r=bad#contact'); 
 		}
 		 
     }
@@ -59,7 +59,7 @@ if(isset($_POST['g-recaptcha-response']))
 }
 else
 {
-	header ('Location: index.php?r=bad#contact'); 
+	header ('Location: /?r=bad#contact'); 
 }
  
 ?>

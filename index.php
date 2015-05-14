@@ -636,8 +636,8 @@
 
 	 	<?php 
 		 	$result = $_GET['r'];
-			if($result == 'ok'){ $msg = '<div class="notification_ok">Tu mensaje ha sido enviado. Muchas gracias!</div>'; }
-			if($result == 'bad'){ $msg = '<div class="notification_ok">Ocurrió un problema enviando el mensaje. Intenta mas tarde.</div>'; }
+			if($result == 'ok'){ $msg = 'Tu mensaje ha sido enviado. Muchas gracias!'; }
+			if($result == 'bad'){ $msg = 'Ocurrió un problema enviando el mensaje. Intenta mas tarde.'; }
 	 	?>
 
 		<section id="contact" class="box">
@@ -653,7 +653,11 @@
 
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1">
-						<div class="space-2x"></div>
+						<div class="space-1x text-center">
+							<p class="col-md-12">
+								<?php echo $msg;  ?>
+							</p>
+						</div>
 						<h6 class="font-alpha uppercase text-center"><b>Envianos tu consulta</b></h6>
 						<hr class="hr-10 align-center">
 						<form action="enviar.php" method="POST" class="slim-form full-inputs row">
@@ -677,17 +681,14 @@
 							<p class="col-md-8">
 								<button type="submit" class="button-lg button-outline make-full uppercase">Enviar mensaje</button>
 							</p>
-							<p class="col-md-12">
-								<?php echo $msg;  ?>
-							</p>
 						</form>
 					</div>
 				</div> 
 
 				<?php 
 				 	$resultcv = $_GET['rcv'];
-					if($resultcv == 'ok'){ $msgcv = '<div class="notification_ok">Tu mensaje ha sido enviado. Muchas gracias!</div>'; }
-					if($resultcv == 'bad'){ $msgcv = '<div class="notification_ok">Ocurrió un problema enviando el mensaje. Intenta mas tarde.</div>'; }
+					if($resultcv == 'ok'){ $msgcv = 'Tu curriculum ha sido enviado. Muchas gracias!'; }
+					if($resultcv == 'bad'){ $msgcv = 'Ocurrió un problema enviando el mensaje. Intenta mas tarde.'; }
 			 	?>
 
 				<section id="cv" class="box box-title">
@@ -697,7 +698,11 @@
 								<div class="fancy-title text-center uppercase">
 									<h4 class="text-alpha">Cargá tu CV</h4>
 									<h6 class="text-grey text-air">Dejános tu curriculum</h6>
-									<br/>
+									<div class="space-1x text-center">
+										<p class="col-md-12">
+											<?php echo $msgcv;  ?>
+										</p>
+									</div>
 
 									<form action="enviarcv.php" method="POST" enctype="multipart/form-data" class="slim-form full-inputs row">
 										<p class="col-xs-12 col-md-3">
@@ -708,9 +713,6 @@
 										</p>
 										<p class="col-xs-12 col-md-8">
 											<button type="submit" class="button-lg button-outline make-full uppercase">Enviar CV</button>
-										</p>
-										<p class="col-md-12">
-											<?php echo $msgcv; ?>
 										</p>
 									</form>
 
