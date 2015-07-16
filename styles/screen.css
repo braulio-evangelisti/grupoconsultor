@@ -9565,7 +9565,9 @@ body:not(.dom-loaded) .page-loader {
 
 label.myLabel input[type="file"] {
     position: fixed;
-    top: -1000px;
+    top: 0px;
+    filter: alpha(opacity=0);
+    opacity: 0;
 }  
 
 /***** Example custom styling *****/

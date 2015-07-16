@@ -1,9 +1,43 @@
 <?php
   
-  $urlubic = "adm-gestor/";
+	$urlubic = "adm-gestor/";
 
-  include_once($urlubic."func.includes/config.inc.php");
-  include_once($urlubic."func.includes/utiles.inc.php");
+	include_once($urlubic."func.includes/config.inc.php");
+	include_once($urlubic."func.includes/utiles.inc.php");
+
+	if(isset($_GET['r'])) 
+	{ 
+		$result = secureParamToSql($_GET['r']); 
+		
+		if($result == 'ok')
+		{ 
+			$msg = 'Tu mensaje ha sido enviado. Muchas gracias!'; 
+		}
+		
+		if($result == 'bad')
+		{ 
+			$msg = 'Ocurrió un problema enviando el mensaje. Intenta mas tarde.'; 
+		}
+		
+		$anchor = "contact"; 
+	}
+	
+	if(isset($_GET['rcv'])) 
+	{ 
+		$resultcv = secureParamToSql($_GET['rcv']); 
+		
+		if($resultcv == 'ok')
+		{ 
+			$msgcv = 'Tu curriculum ha sido enviado. Muchas gracias!'; 
+		}
+		
+		if($resultcv == 'bad')
+		{ 
+			$msgcv = 'Ocurrió un problema enviando el mensaje. Intenta mas tarde.'; 
+		}
+		
+		$anchor = "cv"; 
+	}
 
 ?>
 <!doctype html>
@@ -634,12 +668,6 @@
 	 		</div> 
 	 	</section>
 
-	 	<?php 
-		 	$result = $_GET['r'];
-			if($result == 'ok'){ $msg = 'Tu mensaje ha sido enviado. Muchas gracias!'; }
-			if($result == 'bad'){ $msg = 'Ocurrió un problema enviando el mensaje. Intenta mas tarde.'; }
-	 	?>
-
 		<section id="contact" class="box">
 			<div class="container">
 				<div class="row">
@@ -684,12 +712,6 @@
 						</form>
 					</div>
 				</div> 
-
-				<?php 
-				 	$resultcv = $_GET['rcv'];
-					if($resultcv == 'ok'){ $msgcv = 'Tu curriculum ha sido enviado. Muchas gracias!'; }
-					if($resultcv == 'bad'){ $msgcv = 'Ocurrió un problema enviando el mensaje. Intenta mas tarde.'; }
-			 	?>
 
 				<section id="cv" class="box box-title">
 					<div class="container">
@@ -790,5 +812,43 @@
 
 	</div> 
 	
+	<script src="scripts/components/jquery.js"></script>
+	<script>
+		window.onload = function(){
+			function getUrlParameter(sParam)
+			{
+			    var sPageURL = window.location.search.substring(1);
+			    var sURLVariables = sPageURL.split('&');
+			    for (var i = 0; i < sURLVariables.length; i++) 
+			    {
+			        var sParameterName = sURLVariables[i].split('=');
+			        if (sParameterName[0] == sParam) 
+			        {
+			            return sParameterName[1];
+			        }
+			    }
+			}  
+
+			var r = getUrlParameter('r'); 
+			var rcv = getUrlParameter('rcv'); 
+
+			console.log(r);
+			console.log(rcv);
+
+			if(r) 
+			{
+				
+				location.hash = "#contact";
+
+			}
+
+			if(rcv) 
+			{
+
+				location.hash = "#cv";
+
+			}
+		};
+	</script>
 </body>
 </html>

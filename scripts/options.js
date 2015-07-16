@@ -632,7 +632,7 @@ require(['jquery', 'modernizr'], function() {
 			});
 		}
 		
-		// MAgnific popup
+		// Magnific popup
 		var magPopup = jQuery('.image-link');
 		if(magPopup.length) {
 			require(['jquery.magnific-popup.min'], function() {

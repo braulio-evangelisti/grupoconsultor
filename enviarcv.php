@@ -56,8 +56,8 @@ if(isset($_POST['g-recaptcha-response']))
 		$mail->From = "contacto@grupoconsultorrrhh.com.ar"; 
 		$mail->FromName = "ENVIO DE CV DEL SITIO"; 
 		$mail->Subject = "Nuevo CV desde grupoconsultorrrhh.com.ar "; 
-		/*$mail->AddAddress("grupoconsultor@fibertel.com.ar","Grupo Consultor RRHH");*/
-		$mail->AddBCC("grafitodd@gmail.com");
+		$mail->AddAddress("grupoconsultor@fibertel.com.ar","Grupo Consultor RRHH");
+		/*$mail->AddBCC("grafitodd@gmail.com");*/
 		$mail->CharSet = "UTF-8";
 		$mail->IsHTML(true); 
 		 
@@ -69,11 +69,11 @@ if(isset($_POST['g-recaptcha-response']))
 		 	
 	 	if($mail)
 		{ 
-			header ('Location: /?rcv=ok#cv'); 
+			header ('Location: /?rcv=ok'); 
 		}
 		else
 		{
-			header ('Location: /?rcv=bad#cv'); 
+			header ('Location: /?rcv=bad'); 
 		}
 	 
     /*}

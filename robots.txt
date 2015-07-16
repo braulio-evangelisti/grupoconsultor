@@ -1,3 +1,6 @@
-# robotstxt.org/
-
 User-agent: *
+Disallow: /adm-gestor/ 
+Disallow: /cgi-bin/ 
+User-agent: Googlebot-Image
+Allow: /adm-gestor/
+Sitemap: http://www.grupoconsultorrrhh.com.ar/sitemap.xml
